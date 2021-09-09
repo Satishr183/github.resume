@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
 body{
     background: lightblue;
@@ -13,7 +13,7 @@ body{
 
 }
 .container{
-    position:relative;
+    position:absolute;
     width: 100%;
     max-width: 1000px;
     min-height: 1000px;
@@ -23,10 +23,9 @@ body{
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0,0,1);
     justify-items: center;
-    float: right;
-    
-    
-    
+    top: 91%;
+    left: 46%;
+    transform: translate(-50%,-50%);
 }
 
 .container .left{
@@ -222,4 +221,52 @@ p{
     font-size: 18px;
     width: 20px;
     margin: 10px;
+}
+@media screen and (max-width:800px) {
+
+    .container{
+        position:absolute;
+        width: 80%;
+       height: 100vh;
+        background: #fff;
+        margin: 20px;
+        display:block;
+        box-shadow: 0 35px 55px rgba(0, 0,0,1);
+        top: 126%;
+        left:47%;
+        transform: translate(-50%,-50%);
+    }
+
+
+    .container .left{
+      width: 100%;
+      height: 160vh;
+    }
+
+    .contactInfo{
+        font-size: 20px;
+        letter-spacing: 1px;
+        
+    }
+
+    .contactInfo_education li{
+      font-size: 20px;
+      letter-spacing: 1px;
+      letter-spacing: 1px;
+        
+    
+    }
+    .contactInfo_language ul{
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .title2{
+        font-size: 20px;
+        color: #032636ec;
+    }
+
+    
+    
 }
